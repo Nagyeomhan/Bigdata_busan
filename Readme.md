@@ -1,5 +1,6 @@
 # 크로메이트 도금 양불 판정 서비스 개발 프로젝트
 <br>
+*왜태그안먹냐*
 <br>
 1. 프로젝트 전체 구조
 <img width="682" alt="image" src="https://user-images.githubusercontent.com/108378151/218929701-16ac2769-8b41-45f3-8c99-67842c52c2cb.png">
