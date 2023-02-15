@@ -1,12 +1,12 @@
 # 크로메이트 도금 양불 판정 서비스 개발 프로젝트
 <br>
 <br>
-## 1. 프로젝트 전체 구조
+1. 프로젝트 전체 구조
 <img width="682" alt="image" src="https://user-images.githubusercontent.com/108378151/218929701-16ac2769-8b41-45f3-8c99-67842c52c2cb.png">
 <br>
 **이 중 데이터 수집·저장·관리 파트를 담당했습니다.**
 <br>
-* Git 폴더 구성
+- Git 폴더 구성
 <br>
 (1) DL : 위 그림의 Deep Learning 파트
 <br>
@@ -36,5 +36,5 @@
 <br>
 워크플로우 배치 관리 툴로 Airflow를 도입하여 1일 1회 배치 작업을 관리했습니다.
 <br>
-* Flask -> HDFS  : 웹에 업로드되는 이미지 파일 저장
-* Flask -> MySQL : 웹에 업로드되는 공정환경변수 csv 파일 저장
+- Flask -> HDFS  : 웹에 업로드되는 이미지 파일 저장
+- Flask -> MySQL : 웹에 업로드되는 공정환경변수 csv 파일 저장
