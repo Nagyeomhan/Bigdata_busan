@@ -1,43 +1,40 @@
-# 6도그마 프로젝트 Repository
-
+# 크로메이트 도금 양불 판정 서비스 개발 프로젝트
 <br>
-
-<br><br>
-
-# 1. 개인 디렉터리 방안
-
 <br>
-
-디렉터리는 본인 이름의 이니셜을 따서 개인화 합니다.
-
-> ex. 오찬해 => och/python.py , och/java.java ...
-
-개인 디렉터리는 원하는 파일을 저장하면 되지만 무거운 파일은 올리지 않습니다.
-
-<br><br>
-
-# 2. Issue 작성법
-
+## 1. 프로젝트 전체 구조
+<img width="682" alt="image" src="https://user-images.githubusercontent.com/108378151/218929701-16ac2769-8b41-45f3-8c99-67842c52c2cb.png">
 <br>
-
-Issue를 작성할 때는 제목에 반드시 태그를 작성 합니다. 태그는 아래와 같이 정리합니다. commit message 또한 issue 제목과 일치 시킵니다.
-
-- [PAP] : 문서 정리 관련 태그
-- [FRT] : Front End 관련 작업 태그
-- [BCK] : Back End 관련 작업 태그
-- [OPS] : CI/CD 관련 작업 태그
-- [EDU] : 개인 학습 자료 관련 태그
-- [DAN] : 통계 분석, AI 관련 작업 태그
-- [DEG] : 데이터 수집, 저장 관련 작업 태그
-
+**이 중 데이터 수집·저장·관리 파트를 담당했습니다.**
 <br>
-
-> 예. [PAP][ops] Jenkins 사용법 문서 화 및 Groovy 수정 ==> 커밋 메시지로 사용
-
-<br><br>
-
-# 3. .gitignore 활용
-
+* Git 폴더 구성
 <br>
-
-- <a href='https://github.com/och5351/Bigdata_busan/blob/develop/och/gitignore.md'> 활용법 설명 링크 </a>
+(1) DL : 위 그림의 Deep Learning 파트
+<br>
+(2) ML : 공정환경변수 csv 파일 양불 판정 머신러닝 관련 (데이터로 유의미한 상관관계가 도출되지 못했기 때문에 위 그림에서는 생략되었습니다)
+<br>
+(3) web : 위 그림의 양불 판정 웹서비스 파트
+<br>
+(4) **hng : 위 그림의 데이터 수집 저장 관리 파트**
+<br>
+<br>
+## 2. hng 폴더 상세
+<br>
+(1) schedule_img > main_schedulegood_sh.py : 양품으로 판정된 이미지 데이터를 1일 1회 HDFS의 good 폴더에 적재하도록 구성된 DAG
+<br>
+(2) schedule_img > main_schedulebad_sh.py : 불량품으로 판정된 이미지 데이터를 1일 1회 HDFS의 bad 폴더에 적재하도록 구성된 DAG
+<br>
+(3) schedule_var > main_schedulevar.py : 공정환경변수 csv 파일을 전처리를 거쳐서 1일 1회 MySQL에 적재하도록 구성된 DAG
+<br>
+(4) schedule_var > main_scheduleerr.py : 에러발생로트 csv 파일을 전처리를 거쳐서 1일 1회 MySQL에 적재하도록 구성된 DAG
+<br>
+(5) schedule_var > main_labelmodel.py : 공정환경변수 파일에 에러발생로트가 라벨링되도록 MySQL에서 var과 err 내역을 추출하여 1주 1회 MySQL에 라벨링작업 후 적재되도록 구성된 DAG
+<br>
+<br>
+## 3. 데이터 수집 저장 관리 파트 설명
+<img width="801" alt="image" src="https://user-images.githubusercontent.com/108378151/218930620-190b6297-0686-4d1e-a7d1-ec49f5a0b169.png">
+<img width="676" alt="image" src="https://user-images.githubusercontent.com/108378151/218931493-3aae7dfe-a2e8-458e-8a97-28e6adec7815.png">
+<br>
+워크플로우 배치 관리 툴로 Airflow를 도입하여 1일 1회 배치 작업을 관리했습니다.
+<br>
+* Flask -> HDFS  : 웹에 업로드되는 이미지 파일 저장
+* Flask -> MySQL : 웹에 업로드되는 공정환경변수 csv 파일 저장
