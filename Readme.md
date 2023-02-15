@@ -34,6 +34,7 @@
 <br>
 <br>
 3. 데이터 수집 저장 관리 파트 설명
+<br>
 <img width="801" alt="image" src="https://user-images.githubusercontent.com/108378151/218930620-190b6297-0686-4d1e-a7d1-ec49f5a0b169.png">
 <img width="676" alt="image" src="https://user-images.githubusercontent.com/108378151/218931493-3aae7dfe-a2e8-458e-8a97-28e6adec7815.png">
 <br>
