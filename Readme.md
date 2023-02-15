@@ -4,7 +4,7 @@
 1. 프로젝트 전체 구조
 <img width="682" alt="image" src="https://user-images.githubusercontent.com/108378151/218929701-16ac2769-8b41-45f3-8c99-67842c52c2cb.png">
 <br>
-**이 중 데이터 수집·저장·관리 파트를 담당했습니다.**
+**이중데이터수집·저장·관리 파트를담당했습니다.**
 <br>
 * Git 폴더 구성
 <br>
