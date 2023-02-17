@@ -7,7 +7,7 @@
 <br>
 # 프로젝트 전체 구조
 <br>
-<img width="682" alt="image" src="https://user-images.githubusercontent.com/108378151/218929701-16ac2769-8b41-45f3-8c99-67842c52c2cb.png">
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/108378151/218929701-16ac2769-8b41-45f3-8c99-67842c52c2cb.png">
 <br>
 **이 중 데이터 수집·저장·관리 파트를 담당했습니다.**
 <br>
@@ -39,8 +39,8 @@
 <br>
 # 데이터 수집 저장 관리 파트 설명
 <br>
-<img width="801" alt="image" src="https://user-images.githubusercontent.com/108378151/218930620-190b6297-0686-4d1e-a7d1-ec49f5a0b169.png">
-<img width="676" alt="image" src="https://user-images.githubusercontent.com/108378151/218931493-3aae7dfe-a2e8-458e-8a97-28e6adec7815.png">
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/108378151/218930620-190b6297-0686-4d1e-a7d1-ec49f5a0b169.png">
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/108378151/218931493-3aae7dfe-a2e8-458e-8a97-28e6adec7815.png">
 <br>
 워크플로우 배치 관리 툴로 Airflow를 도입하여 1일 1회 배치 작업을 관리했습니다.
 <br>
