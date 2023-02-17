@@ -6,7 +6,7 @@
 <br>
 <br>
 
-# 프로젝트 전체 구조
+## 프로젝트 전체 구조
 <br>
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/108378151/218929701-16ac2769-8b41-45f3-8c99-67842c52c2cb.png">
 
@@ -29,7 +29,7 @@
 | schedule_var | main_labelmodel.py      | 공정환경변수 파일에 에러발생로트를 라벨링할 수 있도록 MySQL에서 var과 err 내역을 추출하여 1주 1회 라벨링 작업 후 MySQL에 적재되도록 구성된 DAG |
 <br>
 
-# 데이터 수집 저장 관리 파트 설명
+## 데이터 수집 저장 관리 파트 설명
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/108378151/218930620-190b6297-0686-4d1e-a7d1-ec49f5a0b169.png">
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/108378151/218931493-3aae7dfe-a2e8-458e-8a97-28e6adec7815.png">
 
