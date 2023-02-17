@@ -1,13 +1,17 @@
 # 크로메이트 도금 양불 판정 서비스 개발 프로젝트
 <br>
-
-1. 프로젝트 전체 구조
+프로젝트 목적 : 크로메이트 도금 제품의 정상·불량 판정 웹 서비스 구현
+<br>
+프로젝트 기간 : 약 3개월
+<br>
+<br>
+# 프로젝트 전체 구조
 <br>
 <img width="682" alt="image" src="https://user-images.githubusercontent.com/108378151/218929701-16ac2769-8b41-45f3-8c99-67842c52c2cb.png">
 <br>
-**이중데이터수집·저장·관리 파트를담당했습니다.**
+**이 중 데이터 수집·저장·관리 파트를 담당했습니다.**
 <br>
-* Git 폴더 구성
+1. Git 폴더 구성
 <br>
 (1) DL : 위 그림의 Deep Learning 파트
 <br>
@@ -33,7 +37,7 @@
 1주 1회 MySQL에 라벨링작업 후 적재되도록 구성된 DAG
 <br>
 <br>
-3. 데이터 수집 저장 관리 파트 설명
+# 데이터 수집 저장 관리 파트 설명
 <br>
 <img width="801" alt="image" src="https://user-images.githubusercontent.com/108378151/218930620-190b6297-0686-4d1e-a7d1-ec49f5a0b169.png">
 <img width="676" alt="image" src="https://user-images.githubusercontent.com/108378151/218931493-3aae7dfe-a2e8-458e-8a97-28e6adec7815.png">
