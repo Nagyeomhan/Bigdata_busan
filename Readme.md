@@ -10,7 +10,7 @@
 <br>
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/108378151/218929701-16ac2769-8b41-45f3-8c99-67842c52c2cb.png">
 
-**이 중 데이터 수집·저장·관리 파트를 담당했습니다.**
+**이 중 데이터 수집·저장·관리 파트를 담당**
 
 1. Git 폴더 구성<br>
 (1) DL : 위 그림의 Deep Learning 파트<br>
@@ -33,7 +33,7 @@
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/108378151/218930620-190b6297-0686-4d1e-a7d1-ec49f5a0b169.png">
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/108378151/218931493-3aae7dfe-a2e8-458e-8a97-28e6adec7815.png">
 
-**워크플로우 배치 관리 툴로 Airflow를 도입하여 1일 1회 배치 작업을 관리했습니다.**
+**워크플로우 배치 관리 툴로 Airflow를 도입하여 1일 1회 배치 작업을 관리**
 
 * Flask -> HDFS  : 웹에 업로드되는 이미지 파일 저장
 * Flask -> MySQL : 웹에 업로드되는 공정환경변수 csv 파일 저장
