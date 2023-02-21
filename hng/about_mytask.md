@@ -17,12 +17,17 @@
 
 ### 파일 설명
 1. sixdogma_img_input.ipynb
+    <br>
     초기 원천 데이터 중 이미지 파일을 blob 형식으로 변환해서 MySQL에 저장한 코드
 2. sixdogma_var_input.ipynb
+    <br>
     초기 원천 데이터 중 공정환경변수 및 에러발생로트 파일을 MySQL에 저장한 코드
 3. flask_test.ipynb
+    <br>
     flask에서 HDFS에 저장된 이미지를 불러올 수 있도록 다양한 사항 테스트
 4. labeltest.ipynb
+    <br>
     schedule_var > main_labelmodel 작업을 실행할 수 있도록 테스트
 5. testcode.ipynb
+    <br>
     MySQL 스케줄러, upsert 기능, 그리고 csv 파일을 스파크로 열 수 있게 테스트
