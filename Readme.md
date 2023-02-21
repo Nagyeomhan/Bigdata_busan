@@ -14,8 +14,7 @@
 <br>
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/108378151/218929701-16ac2769-8b41-45f3-8c99-67842c52c2cb.png">
 
-**이 중 데이터 수집·저장·관리 파트를 주로 담당하였고** 머신러닝 작업도 일부 담당
-<br>
+**이 중 데이터 수집·저장·관리 파트를 주로 담당하였고** 머신러닝 작업도 일부 담당<br>
 
 * Git 폴더 구성<br>
 (1) DL : 위 그림의 Deep Learning 파트<br>
