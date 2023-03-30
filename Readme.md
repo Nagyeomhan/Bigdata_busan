@@ -1,7 +1,7 @@
 # 크로메이트 도금 양불 판정 서비스 개발 프로젝트
 
 1. 프로젝트 목적 : 크로메이트 도금 제품의 정상·불량 판정 웹 서비스 구현
-2. 프로젝트 기간 : 약 3개월
+2. 프로젝트 기간 : 2022.10 ~ 2022.12 (약 3개월)
 3. 프로젝트 멤버 : 데이터시스템 1명, 모델러 1명, 백엔드 1명, 프론트엔드 1명
 4. 사용 데이터 : <a href='https://www.kamp-ai.kr/front/dataset/AiDataDetail.jsp?AI_SEARCH=&page=2&DATASET_SEQ=25&EQUIP_SEL=&GUBUN_SEL=&FILE_TYPE_SEL=&WDATE_SEL='>[인공지능 중소벤처 제조 플랫폼 KAMP] 크로메이트 AI 데이터셋</a>
 5. 개발 환경<br>
