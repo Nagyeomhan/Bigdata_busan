@@ -27,3 +27,37 @@ from pyspark.sql import SparkSession
 spark = SparkSession.builder.appName('Preprocess CSV data').getOrCreate()
 
 df = spark.read.format('csv').option('header', 'true').load('kafka://localhost:9092/csv-topic')
+
+# preprocess the data
+processed_data = ...
+
+
+## 3. Store the preprocessed data in parquet format in HDFS:
+## Replace values in < > with the appropriate values for your Hadoop Cluster
+
+# write data in parquet format to HDFS
+processed_data.write.mode('overwrite').parquet('hdfs://<HDFS_NAME_NODE>:<HDFS_PORT>/<HDFS_PATH>/<FILENAME>.parquet')
+
+
+## 4. Create an external table in HIVE to access the data stored in parquet format:
+## Replace values in < > with the appropriate values for your Hadoop Cluster
+
+CREATE EXTERNAL TABLE <TABLE_NAME> (
+    <COLUMN_1> <DATA_TYPE_1>,
+    <COLUMN_2> <DATA_TYPE_2>,
+    ...
+)
+
+STORED AS PARQUET
+LOCATION 'hdfs://<HDFS_NAME_NODE>:<HDFS_PORT>/<HDFS_PATH>'
+
+
+## 5. Query the data using HIVE:
+## Replace values in < > with the appropriate values for your use case
+
+SELECT * FROM <TABLE_NAME> WHERE <CONDITION>;
+
+
+### By reading the real-time csv data with Kafka and storing the preprocessed data in parquet format in HDFS,
+### you can benefit from the efficient storage and compression of columnar data
+### and by using HIVE, you can query the data using SQL-like syntax
