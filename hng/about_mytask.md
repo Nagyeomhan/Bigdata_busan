@@ -12,8 +12,6 @@
     - 세부 내용은 schedule_img > about_schedule_img.md 참고
 4. schedule_var : 웹에 유입되는 공정환경변수 파일을 Airflow를 활용해 MySQL에 ETL 목적
     - 세부 내용은 schedule_var > about_schedule_var.md 참고
-5. maintenance : 프로젝트 종료 후 아쉬웠던 점들을 추가로 작업한 내용
-    - 세부 내용은 maintenance > about_maintenance.md 참고
 
 ---
 
