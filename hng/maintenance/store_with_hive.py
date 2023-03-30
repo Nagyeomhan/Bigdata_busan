@@ -1,0 +1,1 @@
+### Q. How to handle real-time data from flask with kafka
